@@ -4,7 +4,7 @@ import Details from "../../components/details.js";
 function Search() {
   const products = document.getElementById("details");
   const search = document.querySelector(".search");
-  const productsUrl = baseUrl + "/products";
+  const productsUrl = baseUrl + "/shoes?populate=*";
   const fullScreenMessage = document.querySelector(".full-screen-message");
   const productsList = document.querySelector(".products-container");
   const xBtn = document.getElementById("xBtn");
@@ -36,10 +36,16 @@ function Search() {
       const response = await fetch(productsUrl);
       const json = await response.json();
 
-      const filteredProducts = json.filter((product) => {
+      const filteredProducts = json.data.filter((product) => {
         return (
-          product.title.trim().toLowerCase().includes(searchString) ||
-          product.description.trim().toLowerCase().includes(searchString)
+          product.attributes.title
+            .trim()
+            .toLowerCase()
+            .includes(searchString) ||
+          product.attributes.textContent
+            .trim()
+            .toLowerCase()
+            .includes(searchString)
         );
       });
 
@@ -63,8 +69,8 @@ function Search() {
         productsList.innerHTML += `
           <a href="./productDetails.html?id=${product.id}">
             <div class="products-content">
-              <div class="products-img" style="background-image: url(${baseUrl}${product.image.formats.medium.url});"></div>
-              <p>${product.title} <span class="price-tag">$${product.price}</span></p>
+              <div class="products-img" style="background-image: url(${product.attributes.image.data.attributes.formats.medium.url});"></div>
+              <p>${product.attributes.title} <span class="price-tag">$${product.attributes.price}</span></p>
             </div>
           </a>
           `;

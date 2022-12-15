@@ -11,23 +11,22 @@ const params = new URLSearchParams(queryString);
 const id = params.get("id");
 
 const Details = async () => {
-  const productsUrl = baseUrl + "/products/" + id;
+  // const productsUrl = baseUrl + "/shoes/" + id;
 
   try {
-    const response = await fetch(productsUrl);
+    const response = await fetch(`${baseUrl}/shoes/${id}?populate=image`);
     const json = await response.json();
-    // console.log(json);
 
     products.innerHTML = `
     <div class="single-product-content">
-      <div class="single-product-img"><div style="background-image: url(${baseUrl}${json.image.formats.medium.url});"></div></div>
+      <div class="single-product-img"><div style="background-image: url(${json.data.attributes.image.data.attributes.formats.medium.url});"></div></div>
       <div class="single-product-text-container">
         <div class="single-product-text">
-            <h2>${json.title}</h2>
-            <p>${json.description}</p>
+            <h2>${json.data.attributes.title}</h2>
+            <p>${json.data.attributes.textContent}</p>
         </div>
         <div class="single-product-buttons">
-            <p>$${json.price}</p>
+            <p>$${json.data.attributes.price}</p>
             <div>
               <button id="dec" class="incDec">-</button>
               <span id="totalClicks" class="totalClicks">1</span>
@@ -38,7 +37,13 @@ const Details = async () => {
       </div>
     </div>
     `;
-    storeLocally(json.image.formats.medium.url, json.title, json.price, id);
+    storeLocally(
+      json.data.attributes.image.data.attributes.formats.medium.url,
+      json.data.attributes.title,
+      json.data.attributes.textContent,
+      json.data.attributes.price,
+      id
+    );
     Count();
 
     return;
@@ -48,13 +53,14 @@ const Details = async () => {
   }
 };
 
-function storeLocally(url, title, price, id) {
+function storeLocally(imageUrl, title, textContent, price, id) {
   const cartList = getFromStorage("inCart");
 
   document.getElementById("buyBtn").addEventListener("click", () => {
     const currentProduct = {
-      currentUrl: url,
+      currentUrl: imageUrl,
       currentTitle: title,
+      currentTextContent: textContent,
       currentPrice: price,
       currentId: id,
     };

@@ -1,4 +1,3 @@
-import { baseUrl } from "../js/api/api";
 import { SumTotal } from "../js/sumTotal";
 import { saveToStorage, getFromStorage } from "../js/localstorage/localstorage";
 
@@ -18,11 +17,12 @@ export const NothingInCart = () => {
 
 export const SomethingInCart = () => {
   getCart.forEach((elm) => {
+    console.log(elm);
     cartList.innerHTML += `
     <div class="cart-cards">
       <i class="cartX fa-solid fa-xmark" id=cartX data-id=${elm.currentId}></i>
       <a href="">
-        <div class="cart-img" style="background-image: url(${baseUrl}${elm.currentUrl});"></div>
+        <div class="cart-img" style="background-image: url(${elm.currentUrl});"></div>
         <div>
           <h2>${elm.currentTitle}</h2>  
           <h2>$${elm.currentPrice}</h2>  

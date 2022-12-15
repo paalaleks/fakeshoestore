@@ -1,17 +1,15 @@
-// import { baseUrl } from "../js/api/api.js";
+import { baseUrl } from "../js/api/api.js";
 const header = document.getElementById("header");
-import hero from "../../../mock-data/hero.json";
 
 const Header = async () => {
-  const heroUrl = hero;
-
   try {
-    const response = await fetch(heroUrl);
+    const response = await fetch(`${baseUrl}/shoe-hero?populate=*`);
     const json = await response.json();
+
     header.innerHTML = "";
 
     header.innerHTML = `
-    <img class="hero-img" src="${json.hero_banner.url}" alt="${json.hero_banner_alt_text}" />
+    <img class="hero-img" src="${json.data.attributes.shoeHero.data.attributes.formats.large.url}" alt="A shoe is thrown in the air" />
     <a class="hero-container" href="./productList.html"><div>
       <h4>
         All shoes are tested and approved by professional athletes.
