@@ -1,0 +1,31 @@
+.message-container {
+  margin-bottom: .5rem;
+  display: flex;
+}
+
+.message {
+  width: 100%;
+  color: #9db7c4;
+  border: 1px solid #9db7c4;
+  padding: 1rem;
+}
+
+.message.error {
+  color: #feecf0;
+  background: #ef2d56;
+  border-color: #ef2d56;
+}
+
+.message.warning {
+  color: #fdf3ec;
+  background: #ed7d3a;
+  border-color: #ed7d3a;
+}
+
+.message.success {
+  color: #f5fcee;
+  background: #97db4f;
+  border-color: #97db4f;
+}
+
+/*# sourceMappingURL=admin.d75a5879.css.map */

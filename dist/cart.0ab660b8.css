@@ -1,0 +1,133 @@
+.cart-section {
+  padding: 0 1rem;
+}
+
+.cart-options-container {
+  width: 35%;
+  margin: 0 auto;
+  position: relative;
+}
+
+@media only screen and (max-width: 576px) {
+  .cart-options-container {
+    width: 80%;
+    margin: 0 0 2rem;
+  }
+}
+
+.cart-options {
+  background: #0b5166;
+  flex-direction: column;
+  padding: .5rem 1rem;
+  display: flex;
+}
+
+.cart-options p {
+  text-align: center;
+}
+
+.cart-options p:nth-of-type(1) {
+  margin: .5rem 0 0;
+}
+
+.cart-options p:nth-of-type(2) {
+  cursor: pointer;
+  background: #07303c;
+  margin: 1rem 0 2rem;
+  padding: .5rem 1rem;
+}
+
+.cart-options button {
+  margin: 2rem 0 1rem;
+}
+
+.cart-options h2:nth-of-type(1) {
+  border-bottom: 1px solid #f0f7f9;
+}
+
+.cart-options h2 {
+  text-align: center;
+}
+
+.cart-options .doubble-line {
+  border-top: 1px solid #f0f7f9;
+  border-bottom: 1px solid #f0f7f9;
+  padding: 1px 0;
+}
+
+@media only screen and (max-width: 576px) {
+  .cart-options {
+    position: static;
+  }
+}
+
+.cart-container {
+  max-width: 992px;
+  min-height: calc(100vh - 2.5rem);
+  background: #0a4253;
+  flex-direction: row-reverse;
+  margin: 0 auto;
+  padding: 3rem 0 0;
+  display: flex;
+  position: relative;
+  box-shadow: -3px 3px #05303ea8, -5px 5px #103c51;
+}
+
+@media only screen and (max-width: 576px) {
+  .cart-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.cart-card-container {
+  flex-direction: column;
+  margin: 0 0 0 auto;
+  display: flex;
+}
+
+@media only screen and (max-width: 576px) {
+  .cart-card-container {
+    margin: 0 auto;
+  }
+}
+
+.cart-cards {
+  width: 300px;
+  border-bottom: 1px solid #f0f7f9;
+  margin: 0 auto;
+  padding: 1rem 0;
+  display: flex;
+  position: relative;
+}
+
+.cart-cards a {
+  display: flex;
+}
+
+.cart-cards h2 {
+  margin-left: 1rem;
+}
+
+.cart-cards .cart-img {
+  height: 5rem;
+  width: 5rem;
+  background-position: center;
+  background-size: cover;
+}
+
+.cart-cards .cartX {
+  cursor: pointer;
+  padding: .5rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+@media only screen and (max-width: 400px) {
+  .cart-cards {
+    width: 240px;
+  }
+}
+
+/*# sourceMappingURL=cart.0ab660b8.css.map */

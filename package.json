@@ -1,7 +1,6 @@
 {
   "name": "shoestore-frontend",
   "version": "1.0.0",
-  "main": "index.js",
   "source": [
     "pages/index.html",
     "pages/productList.html",
@@ -20,7 +19,7 @@
   "devDependencies": {
     "@parcel/transformer-sass": "^2.5.0",
     "eslint": "^8.29.0",
-    "parcel": "^2.5.0"
+    "parcel": "^2.8.2"
   },
   "dependencies": {
     "abortcontroller-polyfill": "^1.7.3",

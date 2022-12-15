@@ -1,0 +1,35 @@
+.admin-section {
+  max-width: 992px;
+  min-height: calc(100vh - 2.5rem);
+  background: #0a4253;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  position: relative;
+  box-shadow: -3px 3px #05303ea8, -5px 5px #103c51;
+}
+
+.admin-container {
+  text-align: center;
+  width: 235px;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  padding-bottom: 5rem;
+  display: flex;
+}
+
+.admin-container a {
+  padding: unset;
+}
+
+.admin-container .big-logo svg {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.admin-container h1 {
+  margin-bottom: 1rem;
+}
+
+/*# sourceMappingURL=admin.bb866d52.css.map */
