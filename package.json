@@ -5,8 +5,17 @@
   },
   "version": "1.0.0",
   "main": "index.js",
+  "source": [
+    "pages/index.html",
+    "pages/productList.html",
+    "pages/productDetails.html",
+    "pages/cart.html",
+    "pages/admin.html",
+    "pages/adminPanel.html"
+  ],
   "scripts": {
-    "build": "parcel pages/index.html pages/productList.html pages/productDetails.html pages/cart.html pages/admin.html pages/adminPanel.html",
+    "start": "parcel",
+    "build": "parcel build",
     "dev": "parcel pages/index.html pages/productList.html pages/productDetails.html pages/cart.html pages/admin.html pages/adminPanel.html"
   },
   "keywords": [],

@@ -1127,7 +1127,7 @@ const Products = async ()=>{
 };
 exports.default = Products;
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","../js/api/api.js":"OFlXG"}],"OFlXG":[function(require,module,exports) {
+},{"../js/api/api.js":"OFlXG","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"OFlXG":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "baseUrl", ()=>baseUrl
