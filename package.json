@@ -1,8 +1,10 @@
 {
   "name": "shoestore-frontend",
+  "optionalDependencies": {
+    "fsevents": "*"
+  },
   "version": "1.0.0",
   "main": "index.js",
-  "private": true,
   "scripts": {
     "build": "parcel pages/index.html pages/productList.html pages/productDetails.html pages/cart.html pages/admin.html pages/adminPanel.html",
     "dev": "parcel pages/index.html pages/productList.html pages/productDetails.html pages/cart.html pages/admin.html pages/adminPanel.html"
