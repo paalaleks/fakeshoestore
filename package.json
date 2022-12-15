@@ -1,8 +1,5 @@
 {
   "name": "shoestore-frontend",
-  "optionalDependencies": {
-    "fsevents": "*"
-  },
   "version": "1.0.0",
   "main": "index.js",
   "source": [
@@ -15,8 +12,7 @@
   ],
   "scripts": {
     "start": "parcel",
-    "build": "parcel build",
-    "dev": "parcel pages/index.html pages/productList.html pages/productDetails.html pages/cart.html pages/admin.html pages/adminPanel.html"
+    "build": "parcel build"
   },
   "keywords": [],
   "author": "",
