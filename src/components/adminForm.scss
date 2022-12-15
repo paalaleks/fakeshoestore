@@ -1,0 +1,36 @@
+@use "../styles/palette.scss" as *;
+
+.admin-section {
+  padding: 0 1rem;
+  position: relative;
+  display: flex;
+  margin: 0 auto;
+  max-width: 992px;
+  background: $dark-color3;
+  box-shadow: $shadow2;
+  min-height: calc(100vh - 2.5rem);
+}
+
+.admin-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+  width: 235px;
+  padding-bottom: 5rem;
+
+  a {
+    padding: unset;
+  }
+  .big-logo {
+    svg {
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+  }
+
+  h1 {
+    margin-bottom: 1rem;
+  }
+}

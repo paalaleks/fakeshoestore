@@ -1,0 +1,31 @@
+@use "../../styles/palette" as *;
+
+.message-container {
+  display: flex;
+  margin-bottom: 0.5rem;
+}
+
+.message {
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid $light-color2;
+  color: $light-color2;
+}
+
+.message.error {
+  border-color: $error;
+  color: $bg-error;
+  background: $error;
+}
+
+.message.warning {
+  border-color: $warning;
+  color: $bg-warning;
+  background: $warning;
+}
+
+.message.success {
+  border-color: $success;
+  color: $bg-success;
+  background: $success;
+}

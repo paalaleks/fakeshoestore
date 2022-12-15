@@ -1,0 +1,61 @@
+@use "../styles/palette.scss" as *;
+
+.top-bar {
+  background: $dark-color6;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  h2 {
+    text-align: center;
+    padding: 0.5rem;
+  }
+}
+
+.admin-panel-section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 992px;
+  background: $dark-color3;
+  box-shadow: $shadow2;
+  min-height: calc(100vh - 2.5rem);
+}
+
+.admin-panel-container {
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  max-width: 992px;
+  background: $dark-color6;
+}
+
+.product-upload-container {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+
+  h2 {
+    margin: 0 auto 2rem auto;
+  }
+
+  #fileUpload {
+    background: unset;
+    margin-bottom: 1rem;
+  }
+
+  input[type="file"]::file-selector-button {
+    cursor: pointer;
+    background: $light-color1;
+    border: none;
+    padding: 4px;
+    border-radius: 2px;
+  }
+  button {
+    margin-top: 1rem;
+  }
+}

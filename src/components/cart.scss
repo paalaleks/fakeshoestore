@@ -1,0 +1,113 @@
+@use "../styles/palette.scss" as *;
+
+.cart-section {
+  padding: 0 1rem;
+}
+
+.cart-options-container {
+  margin: 0 auto;
+  width: 35%;
+  position: relative;
+  @media only screen and (max-width: 576px) {
+    margin: 0 0 2rem 0;
+    width: 80%;
+  }
+}
+.cart-options {
+  background: $dark-color6;
+  padding: 0.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+
+  p {
+    text-align: center;
+  }
+  p:nth-of-type(1) {
+    margin: 0.5rem 0 0 0;
+  }
+
+  p:nth-of-type(2) {
+    margin: 1rem 0 2rem 0;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    background: $dark-color4;
+  }
+
+  button {
+    margin: 2rem 0 1rem 0;
+  }
+
+  h2:nth-of-type(1) {
+    border-bottom: 1px solid $light-color1;
+  }
+  h2 {
+    text-align: center;
+  }
+  .doubble-line {
+    border-top: 1px solid $light-color1;
+    padding: 1px 0;
+    border-bottom: 1px solid $light-color1;
+  }
+
+  @media only screen and (max-width: 576px) {
+    position: static;
+  }
+}
+
+.cart-container {
+  position: relative;
+  padding: 3rem 0 0 0;
+  display: flex;
+  flex-direction: row-reverse;
+  margin: 0 auto;
+  max-width: 992px;
+  min-height: calc(100vh - 2.5rem);
+  background: $dark-color3;
+  box-shadow: $shadow2;
+
+  @media only screen and (max-width: 576px) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.cart-card-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 0 auto;
+  @media only screen and (max-width: 576px) {
+    margin: 0 auto;
+  }
+}
+
+.cart-cards {
+  a {
+    display: flex;
+  }
+  display: flex;
+  position: relative;
+  margin: 0 auto;
+  width: 300px;
+  border-bottom: 1px solid $light-color1;
+  padding: 1rem 0;
+
+  h2 {
+    margin-left: 1rem;
+  }
+  .cart-img {
+    height: 5rem;
+    width: 5rem;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .cartX {
+    cursor: pointer;
+    position: absolute;
+    padding: 0.5rem;
+    right: 0;
+    top: 0;
+  }
+  @media only screen and (max-width: 400px) {
+    width: 240px;
+  }
+}

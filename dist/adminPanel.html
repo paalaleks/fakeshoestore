@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="/index.f9a91491.css"><script defer="" src="/adminPanel.e48830a3.js"></script>
+    <title>Witness the fitness | Admin panel</title>
+  </head>
+  <body>
+    <div class="page-container">
+      <div class="content-wrap">
+        <main class="admin-panel-section">
+          <div class="top-bar">
+            <h2>Admin panel</h2>
+            <div class="logged-in"></div>
+          </div>
+          <div class="admin-panel-container">
+            <form class="product-upload-container">
+              <h2>Add a new product</h2>
+              <div class="message-container"></div>
+              <div class="input-div">
+                <label for="fileUpload">Image:</label>
+                <input type="file" name="image-upload" id="fileUpload" placeholder="Upload an image">
+              </div>
+              <div class="input-div">
+                <label for="name">Name:</label>
+                <input id="name" placeholder="Give product a name">
+              </div>
+              <div class="input-div">
+                <label for="price">Price:</label>
+                <input id="price" placeholder="Set a product price">
+              </div>
+              <div class="input-div">
+                <label for="description">Description:</label>
+                <textarea id="description" placeholder="Write a product description">
+              </textarea></div>
+
+              <button>Submit</button>
+            </form>
+          </div>
+        </main>
+      </div>
+      <footer class="footer" id="footer"></footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,42 @@
+@use "../styles/palette.scss" as *;
+
+// HERO SECTION
+
+.header {
+  max-width: 992px;
+  margin: auto;
+  margin-bottom: 1rem;
+  position: relative;
+  display: flex;
+  box-shadow: $shadow2;
+
+  .hero-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    max-width: 576px;
+    padding: 0 2rem;
+    margin: auto;
+    text-align: center;
+
+    &:hover > div > h4 > i {
+      transform: translateX(5px);
+    }
+
+    h4 {
+      line-height: 24px;
+      margin-bottom: 1rem;
+      color: $dark-color1;
+      background: $opaque-color1;
+      border-radius: 8px;
+      padding: 1rem;
+      cursor: pointer;
+      box-shadow: $shadow;
+    }
+    i {
+      transition: all 0.2s ease-out;
+      margin-left: 8px;
+    }
+  }
+}

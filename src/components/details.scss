@@ -1,0 +1,75 @@
+@use "../styles/palette.scss" as *;
+
+.single-product-section {
+  padding: 0 1rem;
+}
+
+.single-product-container {
+  max-width: 992px;
+  margin: 0 auto;
+  background: $dark-color3;
+  box-shadow: $shadow2;
+}
+
+.single-product-content {
+  max-width: 768px;
+  margin: auto;
+  padding: 2rem;
+
+  .single-product-text-container {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+
+    .single-product-text {
+      margin-right: 2rem;
+
+      p:nth-of-type(2) {
+        margin-top: 1rem;
+        width: fit-content;
+        padding: 0.5rem;
+        border-radius: 8px;
+      }
+    }
+  }
+}
+
+.single-product-img {
+  background: $dark-color5;
+  div {
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
+.single-product-buttons {
+  display: flex;
+  flex-direction: column;
+  margin-top: 4px;
+
+  div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    span {
+      margin: 0 8px;
+    }
+  }
+  p {
+    border-bottom: 2px solid;
+    margin-bottom: 0.5rem;
+    width: 6rem;
+    text-align: center;
+    background: $dark-color6;
+    padding: 4px;
+  }
+  .incDec {
+    padding: 4px 1rem;
+  }
+}
+
+.mb-4 {
+  margin-bottom: 4rem;
+}

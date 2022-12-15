@@ -1,0 +1,85 @@
+@use "../styles/palette.scss" as *;
+
+// NAV SEARCH
+
+.search-field {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+// NAV
+
+.nav {
+  background: inherit;
+  max-width: 992px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+
+  .nav-icons {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  a:nth-child(1) {
+    padding: unset;
+  }
+
+  .logo {
+    cursor: pointer;
+    position: relative;
+    top: 2px;
+    display: flex;
+    padding: 1rem 0.5rem;
+  }
+
+  .arrow-left {
+    &:hover {
+      transform: translateX(-5px);
+    }
+    transition: all 0.2s ease-out;
+
+    a {
+      padding: 4px 8px 4px 4px;
+    }
+  }
+
+  .cart {
+    position: relative;
+    top: 3px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    right: 0;
+    border-radius: 50%;
+  }
+  .cart-icon {
+    margin-bottom: 4px;
+    font-size: 12px;
+    i {
+      margin-right: 4px;
+    }
+  }
+}
+
+.dynamicXBtn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  #xBtn {
+    cursor: pointer;
+    display: none;
+    background: $light-color1;
+    color: $dark-color1;
+    padding: 0px 4px;
+    border-radius: 4px;
+    position: absolute;
+    right: 8px;
+    font-size: 14px;
+  }
+}
