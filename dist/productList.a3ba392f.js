@@ -1219,6 +1219,6 @@ function LeftArrow() {
 }
 exports.default = LeftArrow;
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["lg8KM","03dSc"], "03dSc", "parcelRequire8d29")
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["lg8KM","03dSc"], "03dSc", "parcelRequire2efc")
 
 //# sourceMappingURL=productList.a3ba392f.js.map

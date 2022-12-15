@@ -1164,7 +1164,7 @@ const Featured = async ()=>{
 };
 exports.default = Featured;
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","../js/api/api.js":"OFlXG"}],"4psvf":[function(require,module,exports) {
+},{"../js/api/api.js":"OFlXG","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"4psvf":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 const Footer = ()=>{
@@ -1246,6 +1246,6 @@ function Search() {
 }
 exports.default = Search;
 
-},{"../api/api.js":"OFlXG","../../components/header.js":"gMwGB","../../components/featured.js":"a9kDS","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["7hEpD","32Y13"], "32Y13", "parcelRequire8d29")
+},{"../api/api.js":"OFlXG","../../components/header.js":"gMwGB","../../components/featured.js":"a9kDS","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["7hEpD","32Y13"], "32Y13", "parcelRequire2efc")
 
 //# sourceMappingURL=index.c8bf207f.js.map

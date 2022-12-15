@@ -689,6 +689,6 @@ const Footer = ()=>{
 };
 exports.default = Footer;
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"jlP4C":[function() {},{}]},["lRJXW","eN4bq"], "eN4bq", "parcelRequire8d29")
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"jlP4C":[function() {},{}]},["lRJXW","eN4bq"], "eN4bq", "parcelRequire2efc")
 
 //# sourceMappingURL=adminPanel.0d2d7e3d.js.map

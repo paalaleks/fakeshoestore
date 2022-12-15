@@ -1318,6 +1318,6 @@ function LeftArrow() {
 }
 exports.default = LeftArrow;
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["jJ19f","9Fena"], "9Fena", "parcelRequire8d29")
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["jJ19f","9Fena"], "9Fena", "parcelRequire2efc")
 
 //# sourceMappingURL=productDetails.4d4967e3.js.map
