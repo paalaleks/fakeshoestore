@@ -119,3 +119,45 @@ img {
     width: 100%;
   }
 }
+
+.products-section {
+  padding: 0 1rem;
+}
+
+.products-container {
+  max-width: 992px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  justify-content: center;
+  gap: 1rem;
+}
+.products-content {
+  cursor: pointer;
+  box-shadow: $shadow2;
+  .price-tag {
+    color: $light-color2;
+    font-size: 12px;
+    margin-left: 4px;
+  }
+  p {
+    transition: all 0.2s ease-out;
+    text-align: center;
+    background: $dark-color3;
+    line-height: 1.5rem;
+  }
+  &:hover > p {
+    background: lighten($dark-color3, 5%);
+  }
+
+  .products-img {
+    background: $dark-color7;
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+.mb-4 {
+  margin-bottom: 4rem;
+}

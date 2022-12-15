@@ -2,12 +2,12 @@
   "name": "shoestore-frontend",
   "version": "1.0.0",
   "source": [
-    "pages/index.html",
-    "pages/productList.html",
-    "pages/productDetails.html",
-    "pages/cart.html",
     "pages/admin.html",
-    "pages/adminPanel.html"
+    "pages/index.html",
+    "pages/adminPanel.html",
+    "pages/cart.html",
+    "pages/productDetails.html",
+    "pages/productList.html"
   ],
   "scripts": {
     "start": "parcel",
@@ -19,7 +19,7 @@
   "devDependencies": {
     "@parcel/transformer-sass": "^2.5.0",
     "eslint": "^8.29.0",
-    "parcel": "^2.8.2"
+    "parcel": "latest"
   },
   "dependencies": {
     "abortcontroller-polyfill": "^1.7.3",
@@ -131,5 +131,13 @@
     "xxhash-wasm": "^0.4.2",
     "yaml": "^1.10.2"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paalaleks/fakeshoestore.git"
+  },
+  "bugs": {
+    "url": "https://github.com/paalaleks/fakeshoestore/issues"
+  },
+  "homepage": "https://github.com/paalaleks/fakeshoestore#readme",
   "description": ""
 }
