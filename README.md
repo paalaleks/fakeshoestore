@@ -1,6 +1,6 @@
 # Your project title
 
-![image] (https://res.cloudinary.com/paalaleks/image/upload/v1671140172/medium_Screenshot_2022_12_15_at_22_35_19_9cc06b43ba.png)
+![image](https://res.cloudinary.com/paalaleks/image/upload/v1671140172/medium_Screenshot_2022_12_15_at_22_35_19_9cc06b43ba.png)
 
 A simple overview of the use/purpose of the project.
 
