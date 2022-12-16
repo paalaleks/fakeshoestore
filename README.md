@@ -1,4 +1,4 @@
-# Your project title
+# Witness the fitness
 
 ![image](https://res.cloudinary.com/paalaleks/image/upload/v1671140172/medium_Screenshot_2022_12_15_at_22_35_19_9cc06b43ba.png)
 
@@ -8,9 +8,8 @@ This project was a semester project where we went through a alot of different me
 
 You can add some bullet points if you'd like to:
 
-- List item 1
-- List item 2
-- List item 3
+- Used Parcel.js for bundling sass, html and javascript files.
+- Used Adobe illustrator for for custom design elements.
 
 ## Built With
 
