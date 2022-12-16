@@ -4,7 +4,7 @@
 
 ## Description
 
-This project was a semester project where we went through a alot of different methods to build webpages(webapps). This one is made with Parcel.js. When you build with parcel you'll get a better a idea of how webpages work , casue you "go under the hood" of a bundler. Although webpack is the most common one, parcel bundles together in a smiliar way.
+This project was a semester project where we went through a alot of different methods to build webpages(webapps). This one is made with Parcel.js. When you build with parcel you'll get a better a idea of how webpages work , cause you "go under the hood" of a bundler. Although webpack is the most common one, parcel bundles together in a smiliar way.
 
 You can add some bullet points if you'd like to:
 
