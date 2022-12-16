@@ -2,8 +2,6 @@
 
 ![image](https://res.cloudinary.com/paalaleks/image/upload/v1671140172/medium_Screenshot_2022_12_15_at_22_35_19_9cc06b43ba.png)
 
-A simple overview of the use/purpose of the project.
-
 ## Description
 
 This project was a semester project where we went through a alot of different methods to build webpages(webapps). This one is made with Parcel.js. When you build with parcel you'll get a better a idea of how webpages work , casue you "go under the hood" of a bundler. Although webpack is the most common one, parcel bundles together in a smiliar way.
