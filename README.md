@@ -6,8 +6,6 @@
 
 This project was a semester project where we went through a alot of different methods to build webpages(webapps). This one is made with Parcel.js. When you build with parcel you'll get a better a idea of how webpages work , cause you "go under the hood" of a bundler. Although webpack is the most common one, parcel bundles together in a smiliar way.
 
-You can add some bullet points if you'd like to:
-
 - Used Parcel.js for bundling sass, html and javascript files.
 - Used Adobe illustrator for for custom design elements.
 - Used netlify to deploy the webpage.
